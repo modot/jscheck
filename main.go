@@ -64,6 +64,8 @@ func verifyJSONWithSchema(jsonFilePath string, schemaFilePath string) error {
 			errMsg += fmt.Sprintf("- %s\n", desc)
 		}
 		return fmt.Errorf(errMsg)
+	} else {
+		fmt.Println("JSON is valid according to the schema")
 	}
 
 	return nil
